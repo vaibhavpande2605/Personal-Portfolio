@@ -33,7 +33,7 @@ router.post("/project", async (req, res) => {
 });
 
 // get project specific user id
-router.get("/project/:id", async(req, res) => {
+router.get("/project/:id", async (req, res) => {
   try {
     const project = await projectSchema.findById(req.params.id);
     res.json(project);
@@ -43,31 +43,30 @@ router.get("/project/:id", async(req, res) => {
 });
 
 // update project specific user
-router.put("/project/update/:id", async(req, res) => {
-  const {project}=req.body;
-  
+router.put("/project/update/:id", async (req, res) => {
+  const { project } = req.body;
+
   try {
-    const newProject = await projectSchema.findByIdAndUpdate(req.params.id,{
+    const newProject = await projectSchema.findByIdAndUpdate(req.params.id, {
       title: req.body.title,
-    description: req.body.description,
-    technologies: req.body.technologies,
-    haveLink: req.body.haveLink,
-    link: req.body.link,
-    projectImage: req.body.projectImage,
+      description: req.body.description,
+      technologies: req.body.technologies,
+      haveLink: req.body.haveLink,
+      link: req.body.link,
+      projectImage: req.body.projectImage,
     });
-  
-    let results=await newProject.save();
+
+    let results = await newProject.save();
     await results;
-    res.json({msg:"Item updated"})
+    res.json({ msg: "Item updated" });
   } catch (error) {
     res.status(500).json({ msg: "server problem" });
-      
   }
 });
 
 // delete project specific user
 router.delete("/project/:id", async (req, res) => {
-  const project  = await projectSchema.findByIdAndDelete(req.params.id);
+  const project = await projectSchema.findByIdAndDelete(req.params.id);
   project;
   res.json({ msg: "Item deleted" });
 });

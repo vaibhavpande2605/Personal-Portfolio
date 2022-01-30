@@ -21,7 +21,7 @@ exports.addSkills = async (req, res) => {
   try {
     const newSkills = new skillsSchema({
       type: req.body.type,
-    level: req.body.level
+      level: req.body.level,
     });
 
     await newSkills.save();
@@ -42,26 +42,22 @@ exports.getSkillsId = async (req, res) => {
 };
 
 // update specific user
-exports.updateSkills = async(req,res)=>{
-    
+exports.updateSkills = async (req, res) => {
+  const { skills } = req.body;
 
-    const {skills}=req.body;
-  
   try {
-    const newSkills = await skillsSchema.findByIdAndUpdate(req.params.id,{
+    const newSkills = await skillsSchema.findByIdAndUpdate(req.params.id, {
       type: req.body.type,
-      level: req.body.level
+      level: req.body.level,
     });
-  
-    let results=await newSkills.save();
+
+    let results = await newSkills.save();
     await results;
-    res.json({msg:"Item updated"})
+    res.json({ msg: "Item updated" });
   } catch (error) {
     res.status(500).json({ msg: "server problem" });
-      
   }
-}
-
+};
 
 // delete specific user
 exports.deleteSkills = async (req, res) => {

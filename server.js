@@ -10,7 +10,6 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-
 app.use("/", require("./routes/aboutRoute"));
 app.use("/", require("./routes/projectRoute"));
 app.use("/", require("./routes/educRoutes"));

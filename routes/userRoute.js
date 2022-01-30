@@ -1,14 +1,19 @@
-const router = require("express").Router();
-const userCtrl = require("../controlers/userCtrl");
-const auth1 = require("../middlewares/auth1");
+
+const router= require('express').Router();
+const userCtrl=require('../controlers/userCtrl');
+const auth = require('../middlewares/auth');
+
 
 // register
-router.post("/register", userCtrl.registerUser);
+router.post('/register',userCtrl.registerUser)
+
 
 // login
-router.post("/login", userCtrl.loginUser);
+router.post('/login',userCtrl.loginUser)
+
 
 // verify
-router.get("/verify" , auth1, userCtrl.verifiedToken);
+router.get('/verify', userCtrl.verifiedToken)
 
-module.exports = router;
+
+module.exports=router;

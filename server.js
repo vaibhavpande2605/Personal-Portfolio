@@ -18,6 +18,7 @@ app.use("/", require("./routes/educRoutes"));
 app.use("/", require("./routes/skillsRoute"));
 app.use("/", require("./routes/experienceRoutes"));
 app.use("/", require("./routes/messageRoute"));
+app.use("/", require("./routes/upload"));
 
 // connect to mongodb
 

@@ -10,11 +10,14 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+app.use("/message", require("./routes/messageRoute"));
+app.use("/user", require("./routes/userRoute"));
 app.use("/", require("./routes/aboutRoute"));
 app.use("/", require("./routes/projectRoute"));
 app.use("/", require("./routes/educRoutes"));
 app.use("/", require("./routes/skillsRoute"));
 app.use("/", require("./routes/experienceRoutes"));
+app.use("/", require("./routes/messageRoute"));
 
 // connect to mongodb
 
@@ -36,5 +39,5 @@ mongoose.connect(
 
 PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`);
+  console.log(`Server is listening on port ${PORT} 🔥`);
 });

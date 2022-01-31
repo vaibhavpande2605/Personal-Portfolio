@@ -13,12 +13,11 @@ function Particle() {
     "@media  (max-width: 400px)": {
       width: "100%",
       height: "1000px",
-      backgroundColor: "#ffff"
-
+      backgroundColor: "#ffff",
     },
   };
   return (
-    <div  style={style}>
+    <div style={style}>
       <Particles
         // Add window resize logic if required
         height={window.outerHeight}

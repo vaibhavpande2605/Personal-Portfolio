@@ -8,7 +8,7 @@ import Navbar from "./components/Homepages/Navbar";
 // import Login from "./components/Homepages/Login";
 // import Footer from "./components/Homepages/Footer";
 // import Experience from "./components/Homepages/Experience";
-// import Education from "./components/Homepages/Education";
+import Education from "./components/Homepages/Education";
 // import Contact from "./components/Homepages/Contact";
 import About from "./components/Homepages/About";
 // import Skills from "./components/Homepages/Skills";
@@ -52,13 +52,13 @@ function App() {
             <Route exact path="/" element={<About />} />
           </Routes>
         </Element>
-        {/*
+     
       <Element className="Education">
         <Routes>
           <Route exact path="/" element={<Education />} />
         </Routes>
       </Element>
-
+   {/*
       <Element className="Skills">
         <Routes>
           <Route exact path="/" element={<Skills />} />

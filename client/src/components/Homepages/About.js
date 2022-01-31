@@ -5,7 +5,7 @@ function About() {
     <>
     <div className="main-container">
       <div className="container justify-content-center  about-info">
-        <h2>About me</h2>
+        <h2 className="mb-3">About me</h2>
         <p>
           Passionate Coder, Full Stack Web Developer, Empathic Person <br />I am
           currently a student at P.E.S. Modern College of Engineering, Pune,

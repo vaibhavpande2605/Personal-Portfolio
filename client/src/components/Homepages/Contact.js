@@ -1,171 +1,102 @@
 import React from "react";
-import "./contact.css";
-import "./style.css";
-import BackImg from "../images/im4.png";
-import load2 from "../images/load2.jpg";
 
-const Contact = () => {
+function Contact() {
   return (
-    <div className="main-container">
-      <h2 className="title">Contact form</h2>
-      <div class="container" id="container">
-        <div class="row justify-content-center">
-          <div class="col-md-6 text-center mb-5"></div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-12">
-            <div class="wrapper">
-              <div class="row no-gutters">
-                <div
-                  id="form1"
-                  class="col-lg-7 col-md-6 order-md-last d-flex align-items-stretch"
-                >
-                  <div class="contact-wrap w-100 p-md-5 p-4">
-                    <h3 class="mb-4">Contact Me</h3>
+    <>
+      <section id="contact" class="contact mt-2 mb-3">
+        <div class="container" data-aos="fade-up">
+        <h2 className="mb-5" style={{ color: "#2c2133", fontWeight: "700" }}>
+       Contact
+        </h2>
 
-                    <form
-                      id="contactForm"
-                      name="contactForm"
-                      class="contactForm"
-                    >
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <label class="label" htmlFor="name">
-                              Full Name
-                            </label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              name="name"
-                              id="name"
-                              placeholder="Name"
-                              required
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <label class="label" htmlFor="email">
-                              Email Address
-                            </label>
-                            <input
-                              type="email"
-                              class="form-control"
-                              name="email"
-                              id="email"
-                              placeholder="Email"
-                              required
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <label class="label" htmlFor="subject">
-                              Subject
-                            </label>
-                            <input
-                              type="text"
-                              class="form-control"
-                              name="subject"
-                              id="subject"
-                              placeholder="Subject"
-                              required
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <label class="label" htmlFor="#">
-                              Message
-                            </label>
-                            <textarea
-                              name="message"
-                              class="form-control"
-                              id="message"
-                              cols="30"
-                              rows="4"
-                              placeholder="Message"
-                              required
-                            ></textarea>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <input
-                              type="submit"
-                              value="Send Message"
-                              class="btn btn-primary"
-                            />
-                            <div class="submitting"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+          <div class="row mt-1">
+            <div class="col-lg-4">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>Shivajinagar, Pune, Maharashtra</p>
                 </div>
 
-                <div class="col-lg-5 col-md-6 d-flex align-items-stretch">
-                  <div class="info-wrap bg-secondary w-100 p-md-5 p-4">
-                    <div >
-                      <h3>Let's get in touch</h3>
-                      <p class="mb-4">
-                        We're open for any suggestion or just to have a chat
-                      </p>
-                      <div class="dbox w-100 d-flex align-items-start">
-                        <div class="  icon d-flex align-items-center justify-content-center">
-                          <span class="fa fa-map-marker"></span>
-                        </div>
-                        <div class="text pl-3">
-                          <p>
-                            <span>Address:</span> Pune, Maharashtra, India
-                          </p>
-                        </div>
-                      </div>
-                      <div class="dbox w-100 d-flex align-items-center">
-                        <div class="  icon d-flex align-items-center justify-content-center">
-                          <span class="fa fa-phone"></span>
-                        </div>
-                        <div class="text pl-3">
-                          <p>
-                            <span>Phone:</span>{" "}
-                            <a href="tel://1234567920">+91 9373448307</a>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="dbox w-80 d-flex align-items-center">
-                        <div class=" icon d-flex align-items-center justify-content-center">
-                          <span class="fa fa-paper-plane"></span>
-                        </div>
-                        <div class="text pl-3">
-                          <p>
-                            <span>Email:</span>{" "}
-                            <a href="mailto:info@yoursite.com">
-                              vaibhavpande194@gmail.com
-                            </a>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="dbox w-100 d-flex align-items-center">
-                        <div class="  icon d-flex align-items-center justify-content-center">
-                          <span class="fa fa-globe"></span>
-                        </div>
-                        <div class="text pl-3">
-                          <p>
-                            <span>Website</span> <a href="#">mysite.com</a>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>vaibhavpande194@example.com</p>
+                </div>
+
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+91 9373448307</p>
                 </div>
               </div>
             </div>
+
+            <div class="col-lg-8 mt-5 mt-lg-0">
+              <form
+                action="forms/contact.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+                <div class="form-group mt-3">
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="5"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </>
   );
-};
+}
 
 export default Contact;

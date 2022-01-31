@@ -2,16 +2,16 @@ import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
 // Homepages components
 import Header from "./components/Homepages/Header";
-// import Projects from "./components/Homepages/Projects";
+import Projects from "./components/Homepages/Projects";
 // import Register from "./components/Homepages/Register";
 import Navbar from "./components/Homepages/Navbar";
 // import Login from "./components/Homepages/Login";
 // import Footer from "./components/Homepages/Footer";
-// import Experience from "./components/Homepages/Experience";
+import Experience from "./components/Homepages/Experience";
 import Education from "./components/Homepages/Education";
-// import Contact from "./components/Homepages/Contact";
+import Contact from "./components/Homepages/Contact";
 import About from "./components/Homepages/About";
-// import Skills from "./components/Homepages/Skills";
+import Skills from "./components/Homepages/Skills";
 
 // Admin components
 
@@ -52,19 +52,19 @@ function App() {
             <Route exact path="/" element={<About />} />
           </Routes>
         </Element>
-     
-      <Element className="Education">
-        <Routes>
-          <Route exact path="/" element={<Education />} />
-        </Routes>
-      </Element>
-   {/*
-      <Element className="Skills">
-        <Routes>
-          <Route exact path="/" element={<Skills />} />
-        </Routes>
-      </Element>
 
+        <Element className="Education">
+          <Routes>
+            <Route exact path="/" element={<Education />} />
+          </Routes>
+        </Element>
+
+        <Element className="Skills">
+          <Routes>
+            <Route exact path="/" element={<Skills />} />
+          </Routes>
+        </Element>
+      
       <Element className="Projects">
         <Routes>
           <Route exact path="/" element={<Projects />} />
@@ -82,6 +82,7 @@ function App() {
         </Routes>
       </Element>
 
+        {/*
       <Routes>
         <Route exact path="/login" element={<Login />} />
         <Footer />

@@ -1,0 +1,93 @@
+.edit{
+    min-height: 70vh;
+    margin-bottom: 20px;
+    
+
+}
+
+.edit .same-component{
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
+   
+
+}
+.same-component .same-form{
+    border-radius: 10px;
+    box-shadow: 0 0 10px #2c2133;
+}
+
+.edit .same-form .btns{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+.cancel-btn{
+    background: crimson;
+    border-radius: 10px;
+}
+.update-btn{
+ 
+    border-radius: 10px;
+    background: #2c2133;
+}
+
+.cancel-btn:hover{
+   background: rgb(211, 16, 16);
+  
+}
+.update-btn:hover{
+    background: #341749;
+   
+}
+.updated{
+    text-align: center;
+    font-weight: 400;
+   
+
+}
+.new-updated{
+    display: block;
+}
+
+
+/* upload form */
+
+.edit .upload{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    position: relative;
+}
+
+.edit .upload input{
+    align-self: flex-start;
+    width: 200px;
+}
+
+.edit #file_img{
+    width: 60px;
+    position: relative;
+    width: 100px;
+    height: 45px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.edit .upload img{
+    width: 100px;
+    display: block;
+    height: 75px;
+    margin-top:-9px;
+
+}
+#file_img span {
+    position: absolute;
+    top: -20px;
+    right: -7px;
+    width: 20px;
+
+}

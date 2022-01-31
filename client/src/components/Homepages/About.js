@@ -1,22 +1,37 @@
-import React, { useContext } from "react";
-import { DataContext } from "../context/GlobalContext";
+import React from "react";
 
-const About = () => {
-  const state = useContext(DataContext);
-  const [about] = state.about;
-  // console.log(about);
-
+function About() {
   return (
     <>
-      <main class="container">
-  <div class="bg-light p-5 rounded">
-    <h1>Navbar example</h1>
-    <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
-    <a class="btn btn-lg btn-primary" href="/docs/5.0/components/navbar/" role="button">View navbar docs »</a>
-  </div>
-</main>
+    <div className="main-container">
+      <div className="container justify-content-center  about-info">
+        <h2>About me</h2>
+        <p>
+          Passionate Coder, Full Stack Web Developer, Empathic Person <br />I am
+          currently a student at P.E.S. Modern College of Engineering, Pune,
+          pursuing an undergraduate degree in Computer Engineering. I am
+          interested in Full Stack Web Developement , Artificial Intelligence ,
+          Data Science and learnin new programming languages. I am always
+          curious about things and enjoy learning. I am a detail orientated
+          person and I keep my goals and tasks organized to maintain
+          productivity. I believe that the skills that I have attained from the
+          dynamic environment and competitive university life define me and I am
+          looking forward to implementing and polishing them in any opportunity
+          that I receive.
+        </p>
+
+        <a
+          class="btn btn-light btn-lg about-btn text-light"
+          href="https://www.linkedin.com/in/vaibhavpande2605/"
+          target={"_blank"}
+          role="button"
+        >
+          Read more »
+        </a>
+      </div>
+      </div>
     </>
   );
-};
+}
 
 export default About;

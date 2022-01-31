@@ -4,18 +4,97 @@ import resume from "../images/Vaibhav Pande Resume.pdf";
 import "./header.css";
 import Typewriter from "typewriter-effect";
 import { Particles } from "react-tsparticles";
+// import { tsParticles } from "tsparticles";
 import { Link } from "react-router-dom";
+import Particle from "./Particle";
 const Header = () => {
+  // tsParticles.load("tsparticles", {
+  //   height="500px",
+  //   particles: {
+  //     number: {
+  //       value: 100,
+  //     },
+  //     color: {
+  //       value: "random",
+  //       animation: {
+  //         enable: true,
+  //         speed: 40,
+  //         sync: false,
+  //       },
+  //     },
+  //     shape: {
+  //       type: "circle",
+  //     },
+  //     size: {
+  //       value: 5,
+  //       random: true,
+  //       animation: {
+  //         enable: true,
+  //         speed: 16,
+  //         minimumValue: 0.1,
+  //         sync: false,
+  //       },
+  //     },
+  //     links: {
+  //       enable: true,
+  //       distance: 100,
+  //       color: "random",
+  //       opacity: 0.4,
+  //       width: 1,
+  //     },
+  //     move: {
+  //       enable: true,
+  //     },
+  //   },
+  //   interactivity: {
+  //     detectsOn: "canvas",
+  //     events: {
+  //       onHover: {
+  //         enable: true,
+  //         mode: "repulse",
+  //       },
+  //       onClick: {
+  //         enable: true,
+  //         mode: "bubble",
+  //       },
+  //       resize: true,
+  //     },
+  //     modes: {
+  //       grab: {
+  //         distance: 400,
+  //         links: {
+  //           opacity: 1,
+  //         },
+  //       },
+  //       bubble: {
+  //         distance: 400,
+  //         size: 40,
+  //         duration: 2,
+  //         opacity: 0.8,
+  //       },
+  //       repulse: {
+  //         distance: 200,
+  //       },
+  //       push: {
+  //         quantity: 4,
+  //       },
+  //       remove: {
+  //         quantity: 2,
+  //       },
+  //     },
+  //   },
+  //   detectRetina: true,
+  // });
   return (
     <React.Fragment>
-      <div className="header">
-        <div className="particle">
-          <Particles
-            width="100%"
-            height="400px"
+      <div className="main-container ">
+        <div className="particle ">
+          <Particle />
+          {/* <Particles
+         
             params={{
               fpsLimit: 90,
-              outerHeight: "100px",
+            
 
               background: {
                 color: {
@@ -109,9 +188,9 @@ const Header = () => {
               },
               retina_detect: true,
             }}
-          />
+          /> */}
 
-          <div className="container col-xxl-8 mt-5 px-4 py-5 text-light ">
+          <div className="container col-xxl-8  px-2 py-4 text-light ">
             <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
               <div className="col-10 col-sm-8 col-lg-6 ml-5 profile-img">
                 <img
@@ -123,10 +202,10 @@ const Header = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="col-lg-6">
-                <h1 className="display-5 fw-bold lh-1 mb-3">
+              <div className="col-lg-6  info-head">
+                <h1 className="display-5 fw-bold lh-1 mb-0">
                   {" "}
-                  <h3>Hello,I'm</h3>{" "}
+                  <h6>Hello,I'm</h6>{" "}
                   <div className="fullName">
                     <h1>
                       <Typewriter
@@ -139,24 +218,25 @@ const Header = () => {
                     </h1>
                   </div>
                 </h1>
-                <p className="lead">
-                  Quickly design and customize responsive mobile-first sites
-                  with Bootstrap, the world’s most popular front-end open source
-                  toolkit, featuring Sass variables and mixins, responsive grid
-                  system, extensive prebuilt components, and powerful JavaScript
-                  plugins.
-                </p>
-                <div className="d-grid gap-2 d-md-flex justify-content-md-start">
+                <div className="header-info">
+                  <p>
+                    {" "}
+                    Quickly design and customize responsive mobile-first sites
+                    with Bootstrap, the world’s most popular front-end open
+                    source toolkit, featuring Sass 
+                  </p>
+                </div>
+                <div className="d-grid gap-2 d-md-flex justify-content-md-start header-btn">
                   <button
                     type="button"
-                    style={{ backgroundColor: "#1d1622" ,color: "white",}}
-                    className="btn btn-outline-success btn-lg px-4 me-md-2"
+                    style={{ backgroundColor: "#1d1622", color: "white" }}
+                    className="btn btn-outline-success btn-lg px-4 me-md-2  hire-btn"
                   >
                     Hire Me
                   </button>
                   <button
                     type="button"
-                    className="btn btn-outline-info btn-lg px-4 text-light"
+                    className="btn btn-outline-info btn-lg px-4 text-light  resume-btn"
                   >
                     <Link
                       style={{ textDecoration: "none", color: "white" }}

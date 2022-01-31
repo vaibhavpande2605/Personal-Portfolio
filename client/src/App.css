@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container,
+.contact,
+.main-title {
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* About */
+
+.container {
+  position: relative;
+}
+
+.About {
+  margin-top: 90px;
+  margin-bottom: 10px;
+}
+
+.About .about-info p {
+  color: #2c2133;
+  font-size: 18px;
+  line-height: 1.4;
+  justify-content: center;
+  text-align: justify;
+  font-weight: 500;
+}
+
+.About .about-info h2 {
+  color: #2c2133;
+  font-weight: 700;
+}
+
+.About .about-info .about-btn {
+  background-color: #2c2133;
+}
+
+/* responsive */
+@media (min-width: 200px) and (max-width: 270px) {
+  .About {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 271px) and (max-width: 370px) {
+  .About {
+    margin-top:-50px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 371px) and (max-width: 389px) {
+  .About {
+    margin-top: -15px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 390px) and (max-width: 400px) {
+  .About {
+    margin-top: -30px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 401px) and (max-width: 450px) {
+  .About {
+    margin-top: 60px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 630px) {
+  .About {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 631px) and (max-width:660px) {
+  .About {
+    margin-top: 90px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 661px) and (max-width:750px) {
+  .About {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width:760px) and (max-width: 980px) {
+  .About {
+    margin-top: -15px;
+    margin-bottom: 10px;
+  }
+  
+ 
+}
+@media (min-width: 980px) and (max-width: 1000px) {
+  .About {
+    margin-top: 90px;
+    margin-bottom: 10px;
+  }
+}

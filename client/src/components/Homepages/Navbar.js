@@ -9,8 +9,8 @@ const Navbar = () => {
 
   const scrollToElement = (element) => {
     scroller.scrollTo(element, {
-      duration: 800,
-      delay: 50,
+      duration:10,
+      delay: 1,
       smooth: true,
       offset: -80,
     });

@@ -8,13 +8,6 @@ function Particle() {
     height: "100%",
     backgroundColor: "#2c2133",
     position: "absolute",
-
-    // Adding media querry..
-    "@media  (max-width: 400px)": {
-      width: "100%",
-      height: "1000px",
-      backgroundColor: "#ffff",
-    },
   };
   return (
     <div style={style}>

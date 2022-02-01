@@ -5,9 +5,9 @@ function Contact() {
     <>
       <section id="contact" class="contact mt-2 mb-3">
         <div class="container" data-aos="fade-up">
-        <h2 className="mb-5" style={{ color: "#2c2133", fontWeight: "700" }}>
-       Contact
-        </h2>
+          <h2 className="mb-5" style={{ color: "#2c2133", fontWeight: "700" }}>
+            Contact
+          </h2>
 
           <div class="row mt-1">
             <div class="col-lg-4">

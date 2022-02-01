@@ -6,7 +6,7 @@ import Projects from "./components/Homepages/Projects";
 // import Register from "./components/Homepages/Register";
 import Navbar from "./components/Homepages/Navbar";
 // import Login from "./components/Homepages/Login";
-// import Footer from "./components/Homepages/Footer";
+import Footer from "./components/Homepages/Footer";
 import Experience from "./components/Homepages/Experience";
 import Education from "./components/Homepages/Education";
 import Contact from "./components/Homepages/Contact";
@@ -32,6 +32,7 @@ import Skills from "./components/Homepages/Skills";
 import { Routes, Route, Link } from "react-router-dom";
 import { Element } from "react-scroll";
 import e from "cors";
+
 
 function App() {
   return (
@@ -81,6 +82,12 @@ function App() {
           <Route exact path="/" element={<Contact />} />
         </Routes>
       </Element>
+      <Element className="Footer">
+        <Routes>
+          <Route exact path="/" element={<Footer />} />
+        </Routes>
+      </Element>
+    
 
         {/*
       <Routes>

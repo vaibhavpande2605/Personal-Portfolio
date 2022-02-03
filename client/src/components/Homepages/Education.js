@@ -3,8 +3,8 @@ import React from "react";
 const Education = () => {
   return (
     <>
-      <section className="container my-5 ">
-        <h2 className="mb-5" style={{ color: "#2c2133", fontWeight: "700" }}>
+      <section className="container my-4">
+        <h2 className="mb-4" style={{ color: "#2c2133", fontWeight: "700" }}>
           Education
         </h2>
         <section id="resume" className="resume">

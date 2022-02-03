@@ -1,13 +1,10 @@
 import React from "react";
-import logo from "./../images/pr1.jpg";
-import panel from "./../images/pr5.png";
-import tablet from "./../images/pr3.jpg";
-import arduino1 from "./../images/pr6.jpg";
+
 const Projects = () => {
   return (
     <>
-      <div className="container mb-5 project-img">
-        <h2 className="mb-5" style={{ color: "#2c2133", fontWeight: "700" }}>
+      <div className="container mb-4 project-img">
+        <h2 className="mb-3" style={{ color: "#2c2133", fontWeight: "700" }}>
           Projects
         </h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">

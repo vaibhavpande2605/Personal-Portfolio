@@ -3,10 +3,10 @@ import React from "react";
 function Skills() {
   return (
     <>
-      <div id="skills" class="skills section-bg mb-5">
+      <div id="skills" class="skills section-bg mb-4">
      
         <div class="container" data-aos="fade-up">
-        <h2 className="mb-4" style={{ color: "#2c2133", fontWeight: "700" }}>
+        <h2 className="mb-2" style={{ color: "#2c2133", fontWeight: "700" }}>
           Skills
         </h2>
           <div class="section-title">

@@ -70,7 +70,7 @@ export default class Contact extends Component {
    <section id="contact" className="contact mt-2 mb-3">
           <div className="container" data-aos="fade-up">
             <h2
-              className="mb-5"
+              className="mb-4"
               style={{ color: "#2c2133", fontWeight: "700" }}
             >
               Contact
@@ -165,10 +165,12 @@ export default class Contact extends Component {
                       Your message has been sent. Thank you!
                     </div>
                   </div> */}
-                  <div className={this.state.sent?"msg msgAppear":'msg'}>message has been send
+                  <div className={this.state.sent?"msg msgAppear":'msg'}>message has been sent
                    
                   </div>
-                  <button className='btn btn-primary mt-3 align-items-center' type="submit">Send Message</button>
+                  <div className="text-center mt-3">
+                  <button style={{backgroundColor:'#2c2133'}} type="submit">Send Message</button>
+                  </div>
                 </form>
               </div>
             </div>

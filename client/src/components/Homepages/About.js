@@ -26,7 +26,6 @@ function About() {
           looking forward to implementing and polishing them in any opportunity
           that I receive.
         </p>
-        </div>
         <a
           class="btn btn-light btn-lg about-btn text-light"
           href="https://www.linkedin.com/in/vaibhavpande2605/"
@@ -35,6 +34,8 @@ function About() {
         >
           Read more »
         </a>
+        </div>
+    
       </div>
       </div>
     </>

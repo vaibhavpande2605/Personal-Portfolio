@@ -70,12 +70,7 @@ const Footer = () => {
                 <li onClick={() => scrollToElement("Contact")}>
                   <Link to="/">Contact</Link>
                 </li>
-                <li onClick={() => scrollToElement("Login")}>
-                  <Link to="/login">Login</Link>
-                </li>
-                <li onClick={() => scrollToElement("Admin")} className="admin">
-                  <Link to="/">Admin</Link>
-                </li>
+              
               </div>
             </div>
 
@@ -105,7 +100,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href="#">
-                    <i className="bi bi-skype"></i>
+                    <i className="bi bi-facebook"></i>
                   </a>
                 </li>
               </div>

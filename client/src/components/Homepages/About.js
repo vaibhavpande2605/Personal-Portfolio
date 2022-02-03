@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
+import { DataContext } from "../context/GlobalContext";
 
 function About() {
+ const state = useContext(DataContext);
+ const [about] = state.about;
   return (
+
+
     <>
     <div className="main-container">
-      <div className="container justify-content-center  about-info">
+      <div className="container justify-content-center  ">
         <h2 className="mb-3">About me</h2>
+        {/* <h1>{state}</h1> */}
+        {about.map((item) => {
+            <div className="about-info" key={item._id}>
+               
+          
+                {item.about}
+           
+            </div>;
+         
+          })}
+        <div className="about-info">
         <p>
           Passionate Coder, Full Stack Web Developer, Empathic Person <br />I am
           currently a student at P.E.S. Modern College of Engineering, Pune,
@@ -19,7 +35,7 @@ function About() {
           looking forward to implementing and polishing them in any opportunity
           that I receive.
         </p>
-
+        </div>
         <a
           class="btn btn-light btn-lg about-btn text-light"
           href="https://www.linkedin.com/in/vaibhavpande2605/"

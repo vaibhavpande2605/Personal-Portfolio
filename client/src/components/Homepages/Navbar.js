@@ -65,7 +65,7 @@ const Navbar = () => {
             <li onClick={() => scrollToElement("Experience")}>
               <Link to="/">Experience</Link>
             </li>
-            <li onClick={() => scrollToElement("Contact")}>
+            <li onClick={() => scrollToElement("Contact1")}>
               <Link to="/">Contact</Link>
             </li>
             <li onClick={() => scrollToElement("Login")}>

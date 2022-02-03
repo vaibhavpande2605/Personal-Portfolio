@@ -1,44 +1,69 @@
-require("dotenv").config();
+const bodyParser = require("body-parser");
 const express = require("express");
-const mongoose = require("mongoose");
+const nodemailer = require("nodemailer");
 const cors = require("cors");
-const fileUpload = require("express-fileupload");
 
 const app = express();
 
-// middleware
-app.use(express.json());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
-app.use("/message", require("./routes/messageRoute"));
-app.use("/user", require("./routes/userRoute"));
-app.use("/", require("./routes/aboutRoute"));
-app.use("/", require("./routes/projectRoute"));
-app.use("/", require("./routes/educRoutes"));
-app.use("/", require("./routes/skillsRoute"));
-app.use("/", require("./routes/experienceRoutes"));
-app.use("/", require("./routes/messageRoute"));
-app.use("/", require("./routes/upload"));
+app.get("", () => {
+  resizeBy.send("welcome to my from");
+});
 
-// connect to mongodb
+app.post("/api/forma", (req, res) => {
+  let data = req.body;
 
-const URI = process.env.MONGO_URL;
+  // sat is protocol for transporting messages every mail providers support this protocol
+  let smtpTransport = nodemailer.createTransport({
+    service: "Gmail",
+    //    the port of connect
+    port: 465,
+    //    for authenticate
+    auth: {
+      user: "vaibhavpande193@gmail.com",
+      pass: "Omsai@123",
+    },
+  });
+  let mailOptions = {
+    from: data.email,
+    to: "vaibhavpande193@gmail.com",
+    subject: ` ${data.subject}`,
+    html: `
+      <h3>Information</h3>
+      <ul>
+       <li>Name: ${data.name}</li>
+       <li>email: ${data.email}</li>
+       <li>subject: ${data.subject}</li>
+      </ul>
+      
+      <h3>Message</h3>
+      <p>${data.message}</p>
+      `,
+  };
+  smtpTransport.sendMail(mailOptions, (error, response) => {
+   
+      if (error) 
+      res.send({error})
+      else {
+        res.send('successs')
+      }
+   
+  });
 
-mongoose.connect(
-  URI,
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  },
-  (err) => {
-    if (err) throw err;
-    else {
-      return console.log("mongodb connected");
-    }
-  }
-);
+  smtpTransport.close();
+});
 
-PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT} 🔥`);
+
+
+const PORT = process.env.PORT||3001;
+
+
+
+app.listen(PORT, () =>{
+ console.log(`Server running on port ${PORT} 🔥`);
+ 
+ 
 });

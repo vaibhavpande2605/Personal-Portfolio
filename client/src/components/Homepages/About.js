@@ -1,9 +1,8 @@
 import React, { useContext } from "react";
-import { DataContext } from "../context/GlobalContext";
+
 
 function About() {
- const state = useContext(DataContext);
- const [about] = state.about;
+
   return (
 
 
@@ -12,15 +11,7 @@ function About() {
       <div className="container justify-content-center  ">
         <h2 className="mb-3">About me</h2>
         {/* <h1>{state}</h1> */}
-        {about.map((item) => {
-            <div className="about-info" key={item._id}>
-               
-          
-                {item.about}
-           
-            </div>;
-         
-          })}
+       
         <div className="about-info">
         <p>
           Passionate Coder, Full Stack Web Developer, Empathic Person <br />I am

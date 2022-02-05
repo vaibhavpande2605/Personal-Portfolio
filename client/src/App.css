@@ -122,9 +122,7 @@ a {
 
 /* Education */
 
-------------------------------------------------------------*/
-  .resume
-  .resume-title {
+.resume .resume-title {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
@@ -143,7 +141,7 @@ a {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color:#ff4433 ;
+  color: #ff4433;
   margin-bottom: 10px;
 }
 .resume .resume-item h5 {
@@ -266,7 +264,7 @@ a {
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
 }
-.contact  .error-message {
+.contact .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -277,7 +275,7 @@ a {
 .contact .error-message br + br {
   margin-top: 25px;
 }
-.contact  .sent-message {
+.contact .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -285,13 +283,13 @@ a {
   padding: 15px;
   font-weight: 600;
 }
-.contact  .loading {
+.contact .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
-.contact  .loading:before {
+.contact .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -303,7 +301,7 @@ a {
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
-.contact  input,
+.contact input,
 .contact .textarea {
   border-radius: 4px;
   box-shadow: none;
@@ -312,10 +310,10 @@ a {
 .contact input {
   height: 44px;
 }
-.contact  textarea {
+.contact textarea {
   padding: 10px 12px;
 }
-.contact  button[type="submit"] {
+.contact button[type="submit"] {
   background: #2c2133;
   border: 0;
   padding: 10px 35px;
@@ -323,7 +321,7 @@ a {
   transition: 0.4s;
   border-radius: 50px;
 }
-.contact  button[type="submit"]:hover {
+.contact button[type="submit"]:hover {
   background: #2c2133;
 }
 @-webkit-keyframes animate-loading {
@@ -488,9 +486,6 @@ a {
   }
 }
 
-
-
-
 #arrow i {
   position: fixed;
   bottom: 20px;
@@ -505,20 +500,18 @@ a {
   border-radius: 50px;
 }
 
-
-
-.msg{
+.msg {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 10px;
   margin-top: 10px;
-  width:300px ;
+  width: 300px;
   padding: 3px;
   font-size: 18px;
   font-weight: bold;
   color: #2c2133;
   display: none;
 }
-.msgAppear{
+.msgAppear {
   display: block;
 }

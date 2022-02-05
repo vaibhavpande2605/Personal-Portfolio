@@ -126,7 +126,7 @@ const Projects = () => {
                 </p>
               
               </div>
-              <a className="mb-2 text-center" style={{textDecoration:'none', color:'black' ,fontWeight:'500'}} target={'_blank'} href="/">View Project</a>
+              <a className="mb-2 text-center" style={{textDecoration:'none', color:'black' ,fontWeight:'500'}} target={'_blank'} href="https://github.com/vaibhavpande2605/Personal-Portfolio">View Project</a>
             </div>
           </div>
         </div>

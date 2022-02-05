@@ -101,15 +101,21 @@ a {
     margin-bottom: 10px;
   }
 }
+@media (min-width: 760px) and (max-width: 819px) {
+  .About {
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+}
 @media (min-width: 760px) and (max-width: 980px) {
   .About {
-    margin-top: -15px;
+    margin-top: -10px;
     margin-bottom: 10px;
   }
 }
 @media (min-width: 980px) and (max-width: 1000px) {
   .About {
-    margin-top: 90px;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
 }
@@ -137,7 +143,7 @@ a {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: ;
+  color:#ff4433 ;
   margin-bottom: 10px;
 }
 .resume .resume-item h5 {
@@ -354,7 +360,7 @@ a {
 .contact-center-media h3 {
   text-align: center;
   letter-spacing: 0.1rem;
-  color: lightgray;
+  color: rgb(255, 255, 255);
   margin-bottom: 10px;
   font-size: 28px;
 }
@@ -377,7 +383,7 @@ a {
 
 .contact-links li a {
   margin: 0 5px;
-  color: rgb(191, 192, 192);
+  color: rgb(255, 255, 255);
   font-size: 18px;
   display: inline-block;
   padding: 0 2px;
@@ -385,17 +391,17 @@ a {
 
 .contact-links li a:hover {
   margin: 0 5px;
-  color: rgb(228, 222, 222);
+  color: rgb(223, 223, 223);
 }
 
 .contact-media li a {
   margin: 0 5px;
-  color: rgb(191, 192, 192);
+  color: rgb(255, 255, 255);
   padding: 5px;
   font-size: 18px;
 }
 .contact-media li a:hover {
-  color: rgb(228, 225, 225);
+  color: rgb(211, 209, 209);
 }
 .contact-media li a i {
   margin: 0 5px;
@@ -403,13 +409,13 @@ a {
   font-size: 20px;
 }
 .contact-media li a i:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(207, 207, 207);
 }
 
 .footer {
-  border-top: 1px solid lightgray;
+  border-top: 1px solid rgb(255, 255, 255);
   text-align: center;
-  color: lightgray;
+  color: rgb(255, 255, 255);
   font-style: italic;
   padding: 10px 0;
   font-size: 10px;

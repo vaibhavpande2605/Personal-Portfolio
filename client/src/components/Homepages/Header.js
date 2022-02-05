@@ -1,13 +1,22 @@
 import React from "react";
-import profile from "../images/profilephoto.jpg";
+import profile from "../images/profilephoto.jpeg";
 import resume from "../images/Vaibhav Pande Resume.pdf";
 import "./header.css";
 import Typewriter from "typewriter-effect";
-import { Particles } from "react-tsparticles";
-// import { tsParticles } from "tsparticles";
 import { Link } from "react-router-dom";
 import Particle from "./Particle";
+
+import { scroller } from "react-scroll";
 const Header = () => {
+  const scrollToElement = (element) => {
+    scroller.scrollTo(element, {
+      duration: 10,
+      delay: 1,
+      smooth: true,
+      offset: -80,
+    });
+  };
+
   // tsParticles.load("tsparticles", {
   //   height="500px",
   //   particles: {
@@ -197,20 +206,23 @@ const Header = () => {
                   src={profile}
                   className="d-block mx-lg-auto img-fluid"
                   alt="Bootstrap Themes"
-                  width="350"
-                  height="200"
+                  width="370"
+                  height="250"
                   loading="lazy"
                 />
               </div>
               <div className="col-lg-6  info-head">
                 <h1 className="display-5 fw-bold lh-1 mb-0">
-                  {" "}
-                  <h6>Hello,I'm</h6>{" "}
+                  <h6 className="text-light">Hello, I'm</h6>
                   <div className="fullName">
                     <h1>
                       <Typewriter
                         options={{
-                          strings: ["Vaibhav Pande", "MERN Stack Developer "],
+                          strings: [
+                            "Vaibhav Pande",
+                            "Student",
+                            "Full Stack Developer ",
+                          ],
                           autoStart: true,
                           loop: true,
                         }}
@@ -220,10 +232,9 @@ const Header = () => {
                 </h1>
                 <div className="header-info">
                   <p>
-                    {" "}
-                    Quickly design and customize responsive mobile-first sites
-                    with Bootstrap, the world’s most popular front-end open
-                    source toolkit, featuring Sass 
+                    Passionate coder, Full stack web developer interested in
+                    MERN, Python and CPP developer, Artificial intelligence & Machine learning enthusiast, Empathic
+                    person.
                   </p>
                 </div>
                 <div className="d-grid gap-2 d-md-flex justify-content-md-start header-btn">
@@ -231,8 +242,9 @@ const Header = () => {
                     type="button"
                     style={{ backgroundColor: "#1d1622", color: "white" }}
                     className="btn btn-outline-success btn-lg px-4 me-md-2  hire-btn"
+                    onClick={() => scrollToElement("Contact")}
                   >
-                    Hire Me
+                    <Link  style={{ textDecoration: "none", color: "white" }} to="/">Hire me</Link>
                   </button>
                   <button
                     type="button"

@@ -82,13 +82,13 @@ export default class Contact extends Component {
                   <div className="address">
                     <i className="bi bi-geo-alt"></i>
                     <h4>Location:</h4>
-                    <p>Shivajinagar, Pune, Maharashtra</p>
+                    <p> Nashik, Maharashtra, India</p>
                   </div>
 
                   <div className="email">
                     <i className="bi bi-envelope"></i>
                     <h4>Email:</h4>
-                    <p>vaibhavpande194@example.com</p>
+                    <p>vaibhavpande193@gmail.com</p>
                   </div>
 
                   <div className="phone">
@@ -112,7 +112,7 @@ export default class Contact extends Component {
                         name="name"
                         className="form-control mt-1 name"
                      
-                        placeholder="Your Name"
+                        placeholder=" Name"
                         required
                         value={this.state.name}
                         onChange={this.handleNameChange}
@@ -125,7 +125,7 @@ export default class Contact extends Component {
                         className="form-control mt-1"
                         name="email"
                     
-                        placeholder="Your Email"
+                        placeholder=" Email"
                         required
                         value={this.state.email}
                         onChange={this.handleEmailChange}

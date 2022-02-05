@@ -79,27 +79,27 @@ const Footer = () => {
               <h3>Media</h3>
               <div className="contact-media">
                 <li>
-                  <a href="#">
+                  <a href={'https://github.com/vaibhavpande2605'} target='_blank'>
                     <i className="bi bi-github"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href={'https://www.instagram.com/vaibhavapande/'} target='_blank'>
                     <i className="bi bi-instagram"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href={'https://www.linkedin.com/in/vaibhavpande2605/'} target='_blank'>
                     <i className="bi bi-linkedin"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href={'https://twitter.com/Vaibhav30827869'} target='_blank'>
                     <i className="bi bi-twitter"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href={'https://www.facebook.com/vaibhav.pande.31149/'} target='_blank'>
                     <i className="bi bi-facebook"></i>
                   </a>
                 </li>

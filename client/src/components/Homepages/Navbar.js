@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import Logo from "./../images/logo.png";
+import Logo from "./../images/logo.jpeg";
 import { scroller } from "react-scroll";
 
 const Navbar = () => {

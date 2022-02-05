@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.09771c40.css",
+    "main.js": "/static/js/main.e9502bdb.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/project6.png": "/static/media/project6.5711c298171cb81d2677.png",
+    "static/media/project1.png": "/static/media/project1.3aa34d1bab0f4e78d5f8.png",
+    "static/media/project3.png": "/static/media/project3.1205e9cd87c65205b34a.png",
+    "static/media/project2.png": "/static/media/project2.13fdfde6b7b65d90b149.png",
+    "static/media/Vaibhav Pande Resume.pdf": "/static/media/Vaibhav Pande Resume.5c74fa40ff66b39c0bb2.pdf",
+    "static/media/project5.png": "/static/media/project5.0beaaed111f9f2f996a0.png",
+    "static/media/project4.png": "/static/media/project4.a16b5c27ad7e17f358ee.png",
+    "static/media/profilephoto.jpeg": "/static/media/profilephoto.9f5babcf5118a5fed48c.jpeg",
+    "static/media/logo.jpeg": "/static/media/logo.e271e1bbc6c912d2c52c.jpeg",
+    "index.html": "/index.html",
+    "main.09771c40.css.map": "/static/css/main.09771c40.css.map",
+    "main.e9502bdb.js.map": "/static/js/main.e9502bdb.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09771c40.css",
+    "static/js/main.e9502bdb.js"
+  ]
+}

@@ -4,24 +4,24 @@ function Skills() {
   return (
     <>
     <div className="main-container">
-      <div id="skills" class="skills section-bg mb-5">
+      <div id="skills" className="skills section-bg mb-5">
      
-        <div class="container" data-aos="fade-up">
+        <div className="container" data-aos="fade-up">
         <h2 className="mb-2" style={{ color: "#2c2133", fontWeight: "700" }}>
           Skills
         </h2>
-          <div class="section-title">
+          <div className="section-title">
           </div>
 
-          <div class="row skills-content ">
-            <div class="col-lg-6 px-3 ">
-            <div class="progress ">
-                <span class="skill">
-                 CPP <i class="val">90%</i>
+          <div className="row skills-content ">
+            <div className="col-lg-6 px-3 ">
+            <div className="progress ">
+                <span className="skill">
+                 CPP <i className="val">90%</i>
                 </span>
-                <div class="progress-bar-wrap">
+                <div className="progress-bar-wrap">
                   <div
-                    class="progress-bar"
+                    className="progress-bar"
                     role="progressbar"
                     aria-valuenow="75"
                     aria-valuemin="0"
@@ -29,13 +29,13 @@ function Skills() {
                   ></div>
                 </div>
               </div>
-              <div class="progress">
-                <span class="skill">
-                Python <i class="val">80%</i>
+              <div className="progress">
+                <span className="skill">
+                Python <i className="val">80%</i>
                 </span>
-                <div class="progress-bar-wrap">
+                <div className="progress-bar-wrap">
                   <div
-                    class="progress-bar"
+                    className="progress-bar"
                     role="progressbar"
                     aria-valuenow="75"
                     aria-valuemin="0"
@@ -43,13 +43,13 @@ function Skills() {
                   ></div>
                 </div>
               </div>
-              <div class="progress">
-                <span class="skill">
-                  HTML <i class="val">100%</i>
+              <div className="progress">
+                <span className="skill">
+                  HTML <i className="val">100%</i>
                 </span>
-                <div class="progress-bar-wrap">
+                <div className="progress-bar-wrap">
                   <div
-                    class="progress-bar"
+                    className="progress-bar"
                     role="progressbar"
                     aria-valuenow="100"
                     aria-valuemin="0"
@@ -58,13 +58,13 @@ function Skills() {
                 </div>
               </div>
 
-              <div class="progress">
-                <span class="skill">
-                  CSS <i class="val">85%</i>
+              <div className="progress">
+                <span className="skill">
+                  CSS <i className="val">85%</i>
                 </span>
-                <div class="progress-bar-wrap">
+                <div className="progress-bar-wrap">
                   <div
-                    class="progress-bar"
+                    className="progress-bar"
                     role="progressbar"
                     aria-valuenow="90"
                     aria-valuemin="0"
@@ -73,13 +73,13 @@ function Skills() {
                 </div>
               </div>
 
-              <div class="progress">
-                <span class="skill">
-                  JavaScript <i class="val">90%</i>
+              <div className="progress">
+                <span className="skill">
+                  JavaScript <i className="val">90%</i>
                 </span>
-                <div class="progress-bar-wrap">
+                <div className="progress-bar-wrap">
                   <div
-                    class="progress-bar"
+                    className="progress-bar"
                     role="progressbar"
                     aria-valuenow="75"
                     aria-valuemin="0"
@@ -91,14 +91,14 @@ function Skills() {
       
             </div>
 
-            <div class="col-lg-6 px-3">
-              <div class="progress">
-                <span class="skill">
-                  ReactJS <i class="val">87%</i>
+            <div className="col-lg-6 px-3">
+              <div className="progress">
+                <span className="skill">
+                  ReactJS <i className="val">87%</i>
                 </span>
-                <div class="progress-bar-wrap">
+                <div className="progress-bar-wrap">
                   <div
-                    class="progress-bar"
+                    className="progress-bar"
                     role="progressbar"
                     aria-valuenow="80"
                     aria-valuemin="0"
@@ -107,13 +107,13 @@ function Skills() {
                 </div>
               </div>
 
-              <div class="progress">
-                <span class="skill">
-                NodeJs<i class="val">90%</i>
+              <div className="progress">
+                <span className="skill">
+                NodeJs<i className="val">90%</i>
                 </span>
-                <div class="progress-bar-wrap">
+                <div className="progress-bar-wrap">
                   <div
-                    class="progress-bar"
+                    className="progress-bar"
                     role="progressbar"
                     aria-valuenow="90"
                     aria-valuemin="0"
@@ -122,13 +122,13 @@ function Skills() {
                 </div>
               </div>
 
-              <div class="progress">
-                <span class="skill">
-                  MongoDB<i class="val">92%</i>
+              <div className="progress">
+                <span className="skill">
+                  MongoDB<i className="val">92%</i>
                 </span>
-                <div class="progress-bar-wrap">
+                <div className="progress-bar-wrap">
                   <div
-                    class="progress-bar"
+                    className="progress-bar"
                     role="progressbar"
                     aria-valuenow="55"
                     aria-valuemin="0"
@@ -136,13 +136,13 @@ function Skills() {
                   ></div>
                 </div>
               </div>
-              <div class="progress">
-                <span class="skill">
-               ExpressJS <i class="val">86%</i>
+              <div className="progress">
+                <span className="skill">
+               ExpressJS <i className="val">86%</i>
                 </span>
-                <div class="progress-bar-wrap">
+                <div className="progress-bar-wrap">
                   <div
-                    class="progress-bar"
+                    className="progress-bar"
                     role="progressbar"
                     aria-valuenow="55"
                     aria-valuemin="0"
@@ -150,13 +150,13 @@ function Skills() {
                   ></div>
                 </div>
               </div>
-              <div class="progress">
-                <span class="skill">
-                 Bootstrap <i class="val">80%</i>
+              <div className="progress">
+                <span className="skill">
+                 Bootstrap <i className="val">80%</i>
                 </span>
-                <div class="progress-bar-wrap">
+                <div className="progress-bar-wrap">
                   <div
-                    class="progress-bar"
+                    className="progress-bar"
                     role="progressbar"
                     aria-valuenow="55"
                     aria-valuemin="0"

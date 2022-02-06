@@ -36,8 +36,9 @@ const Header = () => {
                 />
               </div>
               <div className="col-lg-6  info-head px-2 ">
+              <h6 className="text-light">Hello, I'm</h6>
                 <h1 className="display-5 fw-bold  mb-0">
-                  <h6 className="text-light">Hello, I'm</h6>
+                 
                   <div className="fullName">
                     <h1>
                       <Typewriter

@@ -24,7 +24,7 @@ function About() {
               implementing and polishing them in any opportunity that I receive.
             </p>
             <a
-              class="btn btn-light btn-lg about-btn text-light"
+              className="btn btn-light btn-lg about-btn text-light"
               href="https://www.linkedin.com/in/vaibhavpande2605/"
               target={"_blank"}
               role="button"

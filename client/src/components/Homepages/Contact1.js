@@ -67,8 +67,8 @@ export class contact1 extends Component {
   render() {
     return (
       <>
-        <section id="contact" class="contact mt-2 mb-3">
-          <div class="container" data-aos="fade-up">
+        <section id="contact" className="contact mt-2 mb-3">
+          <div className="container" data-aos="fade-up">
             <h2
               className="mb-5"
               style={{ color: "#2c2133", fontWeight: "700" }}
@@ -76,38 +76,38 @@ export class contact1 extends Component {
               Contact
             </h2>
 
-            <div class="row mt-1">
-              <div class="col-lg-4">
-                <div class="info">
-                  <div class="address">
-                    <i class="bi bi-geo-alt"></i>
+            <div className="row mt-1">
+              <div className="col-lg-4">
+                <div className="info">
+                  <div className="address">
+                    <i className="bi bi-geo-alt"></i>
                     <h4>Location:</h4>
                     <p>Shivajinagar, Pune, Maharashtra</p>
                   </div>
 
-                  <div class="email">
-                    <i class="bi bi-envelope"></i>
+                  <div className="email">
+                    <i className="bi bi-envelope"></i>
                     <h4>Email:</h4>
                     <p>vaibhavpande194@example.com</p>
                   </div>
 
-                  <div class="phone">
-                    <i class="bi bi-phone"></i>
+                  <div className="phone">
+                    <i className="bi bi-phone"></i>
                     <h4>Call:</h4>
                     <p>+91 9373448307</p>
                   </div>
                 </div>
               </div>
 
-              <div class="col-lg-8 mt-5 mt-lg-0">
+              <div className="col-lg-8 mt-5 mt-lg-0">
                 <form onClick={this.formSubmit} >
                   <p>{banner}</p>
-                  <div class="row">
-                    <div class="col-md-6 form-group">
+                  <div className="row">
+                    <div className="col-md-6 form-group">
                       <input
                         type="text"
                         name="name"
-                        class="form-control"
+                        className="form-control"
                         id="name"
                         placeholder="Your Name"
                         required
@@ -115,10 +115,10 @@ export class contact1 extends Component {
                         onChange={this.handleNameChange}
                       />
                     </div>
-                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <div className="col-md-6 form-group mt-3 mt-md-0">
                       <input
                         type="email"
-                        class="form-control"
+                        className="form-control"
                         name="email"
                         id="email"
                         placeholder="Your Email"
@@ -128,10 +128,10 @@ export class contact1 extends Component {
                       />
                     </div>
                   </div>
-                  <div class="form-group mt-3">
+                  <div className="form-group mt-3">
                     <input
                       type="text"
-                      class="form-control"
+                      className="form-control"
                       name="subject"
                       id="subject"
                       placeholder="Subject"
@@ -140,9 +140,9 @@ export class contact1 extends Component {
                       onChange={this.handleSubjectChange}
                     />
                   </div>
-                  <div class="form-group mt-3">
+                  <div className="form-group mt-3">
                     <textarea
-                      class="form-control"
+                      className="form-control"
                       name="message"
                       rows="5"
                       placeholder="Message"
@@ -151,10 +151,10 @@ export class contact1 extends Component {
                       onChange={this.handleMessageChange}
                     ></textarea>
                   </div>
-                  <div class="my-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">
+                  <div className="my-3">
+                    <div className="loading">Loading</div>
+                    <div className="error-message"></div>
+                    <div className="sent-message">
                       Your message has been sent. Thank you!
                     </div>
                   </div>

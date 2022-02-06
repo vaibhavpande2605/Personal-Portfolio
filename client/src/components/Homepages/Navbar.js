@@ -29,8 +29,8 @@ const Navbar = () => {
   return (
     <>
     <div className="main-container">
-    <div className="nav-container">
-      <nav>
+    <div className="nav-container ">
+      <nav >
         <div className="logoBtn">
           <Link to="/" onClick={() => scrollToElement("Home")}>
             <img src={Logo} alt="" />

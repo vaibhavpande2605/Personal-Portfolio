@@ -58,7 +58,7 @@ a {
 /* responsive */
 @media (min-width: 200px) and (max-width: 281px) {
   .About {
-    margin-top: -20px;
+    margin-top: -32px;
     margin-bottom: 10px;
     width: 100%;
   }
@@ -79,7 +79,7 @@ a {
 }
 @media (min-width: 282px) and (max-width: 370px) {
   .About {
-    margin-top: 50px;
+    margin-top: 48px;
     margin-bottom: 10px;
   }
   .Home .main-container .container .row {

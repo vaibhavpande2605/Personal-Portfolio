@@ -12,11 +12,11 @@ function About() {
             <p>
               I am currently a student at P.E.S's Modern College of Engineering,
               Pune, Maharashtra, India. I am pursuing an undergraduate degree in
-              Computer Engineering. I will be gradduate in 2024. I am interested
+              Computer Engineering. I will be graduate in 2024. I am interested
               in Full Stack Web Developement , Artificial Intelligence and
-              Machine Learning , Data Science and learnin new programming
+              Machine Learning , Data Science and learning new programming
               languages. I also have knowledge of CPP, Python with Data
-              Structures And Algorithms. I am always curious about things and
+              Structures And Algorithms. I am always curious about to learn new things and
               enjoy learning. I am a detail orientated person and I keep my
               goals and tasks organized to maintain productivity. I believe that
               the skills that I have attained from the dynamic environment and

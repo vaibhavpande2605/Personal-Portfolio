@@ -106,7 +106,7 @@ export default class Contact extends Component {
                   >
                   {/* <p>{banner}</p> */}
                   <div className="row">
-                    <div className="col-md-6 form-group px-1">
+                    <div className="col-md-6 form-group ">
                         <label htmlFor="name">Enter Your Name</label>
                       <input
                         type="text"
@@ -119,7 +119,7 @@ export default class Contact extends Component {
                         onChange={this.handleNameChange}
                       />
                     </div>
-                    <div className="col-md-6 form-group px-1  mt-3 mt-md-0">
+                    <div className="col-md-6 form-group  mt-3 mt-md-0">
                     <label htmlFor="email">Enter Your Email</label>
                       <input
                         type="email"
@@ -133,7 +133,7 @@ export default class Contact extends Component {
                       />
                     </div>
                   </div>
-                  <div className="form-group mt-3 px-1">
+                  <div className="form-group mt-3 ">
                   <label htmlFor="subject">Enter Your Subject</label>
                     <input
                       type="text"
@@ -146,7 +146,7 @@ export default class Contact extends Component {
                       onChange={this.handleSubjectChange}
                     />
                   </div>
-                  <div className="form-group mt-3 px-1">
+                  <div className="form-group mt-3 ">
                   <label htmlFor="message">Enter Your Message</label>
                     <textarea
                       className="form-control message mt-1"

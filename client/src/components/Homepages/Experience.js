@@ -3,6 +3,7 @@ import React from "react";
 function Experience() {
   return (
     <>
+    <div className="main-container">
       <section className="container my-5 ">
         <h2 className="mb-4" style={{ color: "#2c2133", fontWeight: "700" }}>
           Experience
@@ -99,6 +100,7 @@ function Experience() {
           </div>
         </section>
       </section>
+      </div>
     </>
   );
 }

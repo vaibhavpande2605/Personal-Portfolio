@@ -63,8 +63,8 @@ color:#0d6868 ;
 }
 @media (min-width: 200px) and (max-width: 389px) {
   .profile-img img {
-    width: 230px;
-    margin-top: -53px;
+    width: 220px;
+    margin-top: -52px;
     margin-right: -70px;
     height: 240px;
   }
@@ -73,15 +73,15 @@ color:#0d6868 ;
     transition: 0.5ms ease-in-out;
   }
   .header-btn{
-    margin-top: 40px;
+    margin-top: 30px;
   }
 
   .header-btn .hire-btn {
-    padding: 8px;
-    margin-bottom: 8px;
+    padding: 5px;
+    margin-bottom: 12px;
   }
   .header-btn .resume-btn {
-    padding:8px;
+    padding:5px;
     
   }
   .header-info p {
@@ -90,10 +90,10 @@ color:#0d6868 ;
     justify-content: center;
     line-height: 1.2;
     padding: 1px;
-    margin-top:12px ;
+    margin-top:10px ;
   }
   .info-head {
-    margin-top: 18px;
+    margin-top: 16px;
 
   }
   .info-head h1 {
@@ -101,6 +101,9 @@ color:#0d6868 ;
     text-align: center;
     margin-top: 4px;
     font-size: 23px;
+  }
+  body{
+    width: 100%;
   }
 }
 @media (min-width: 390px) and (max-width: 450px) {
@@ -143,6 +146,7 @@ color:#0d6868 ;
     text-align: center;
     font-size: 30px;
   }
+
 }
 
 
@@ -272,7 +276,7 @@ color:#0d6868 ;
     margin-top: 20px;
   }
   .About{
-    margin-top: 80px !important;
+    margin-top: 122px !important;
   }
 
  .Home .main-container .container .row{
@@ -330,11 +334,11 @@ color:#0d6868 ;
     font-size: 30px;
   }
   .About{
-    margin-top: 250px !important;
+    margin-top: 130px !important;
   }
 
  .Home .main-container .container .row{
-    margin-top: 250px !important;
+    margin-top: 220px !important;
   }
 
 }

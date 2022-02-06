@@ -3,6 +3,7 @@ import React from "react";
 const Education = () => {
   return (
     <>
+      <div className="main-container">
       <section className="container my-5">
         <h2 className="mb-4" style={{ color: "#2c2133", fontWeight: "700" }}>
           Education
@@ -49,6 +50,9 @@ const Education = () => {
           </div>
         </section>
       </section>
+      
+      </div>
+  
     </>
   );
 };

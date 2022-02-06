@@ -4,10 +4,16 @@
   box-sizing: border-box;
 }
 
-.main-container,
-.contact,
-.main-title {
-  margin: 0 auto;
+body,html{
+  width: 100%;
+}
+
+
+.main-container
+ {
+  margin: 0 auto ;
+  max-width: 100%;
+ 
 }
 
 li {
@@ -27,6 +33,7 @@ a {
 .About {
   margin-top: 90px;
   /* margin-bottom: 10px; */
+  width: 100%;
 }
 
 .About .about-info p {
@@ -49,25 +56,51 @@ a {
 }
 
 /* responsive */
-@media (min-width: 200px) and (max-width: 280px) {
+@media (min-width: 200px) and (max-width: 281px) {
   .About {
-    margin-top: -55px;
+    margin-top: -20px;
     margin-bottom: 10px;
+    width: 100%;
   }
   .About .about-info p {
     font-size: 17px;
   }
+  .header-info p {
+    font-size: 15px;
+    text-align: justify;
+    justify-content: center;
+    line-height: 1.15;
+    padding: 1px;
+    margin-top:-5px;
+  }
+  body{
+    width: 100%;
+  }
 }
-@media (min-width: 281px) and (max-width: 370px) {
+@media (min-width: 282px) and (max-width: 370px) {
   .About {
-    margin-top: 38px;
+    margin-top: 50px;
     margin-bottom: 10px;
+  }
+  .Home .main-container .container .row {
+    margin-top: 40px !important;
   }
 }
 @media (min-width: 371px) and (max-width: 389px) {
   .About {
-    margin-top: -15px;
+    margin-top: -10px;
     margin-bottom: 10px;
+  }
+  .Home .main-container .container .row {
+    margin-top:20px !important;
+  }
+  .header-info p {
+    font-size: 160px;
+    text-align: justify;
+    justify-content: center;
+    line-height: 1.15;
+    padding: 1px;
+    margin-top: 10px;
   }
 }
 @media (min-width: 390px) and (max-width: 400px) {
@@ -78,14 +111,17 @@ a {
 }
 @media (min-width: 401px) and (max-width: 450px) {
   .About {
-    margin-top: 60px;
+    margin-top: 55px;
     margin-bottom: 10px;
+  }
+  .About p {
+    margin-top: 5px;
   }
 }
 
 @media (min-width: 500px) and (max-width: 630px) {
   .About {
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 10px;
   }
 }
@@ -103,7 +139,7 @@ a {
 }
 @media (min-width: 760px) and (max-width: 819px) {
   .About {
-    margin-top: -10px;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
 }

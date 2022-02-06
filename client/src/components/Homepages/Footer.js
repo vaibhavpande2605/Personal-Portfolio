@@ -36,9 +36,7 @@ const Footer = () => {
 
   return (
     <>
-      {/* <div id="arrow">
-        <i class="bi bi-arrow-up" aria-hidden="true"></i>
-      </div> */}
+      <div className="main-container">
 
       <div className="main-contact mt-5">
         <div className="contact">
@@ -113,11 +111,12 @@ const Footer = () => {
             {" "}
             &copy; Copyright{" "}
             <strong>
-              <span>myportfolio</span>
+              <span>vaibhav-pande-portfolio</span>
             </strong>
             . All Rights Reserved
           </p>
         </div>
+      </div>
       </div>
     </>
   );

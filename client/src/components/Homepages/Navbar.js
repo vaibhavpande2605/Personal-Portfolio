@@ -27,6 +27,8 @@ const Navbar = () => {
   };
 
   return (
+    <>
+    <div className="main-container">
     <div className="nav-container">
       <nav>
         <div className="logoBtn">
@@ -72,7 +74,8 @@ const Navbar = () => {
           </ul>
         </div>
       </nav>
-    </div>
+    </div></div>
+    </>
   );
 };
 

@@ -9,6 +9,7 @@ import project6 from "../images/project6.png";
 const Projects = () => {
   return (
     <>
+    <div className="main-container">
       <div className="container mb-4 project-img">
         <h2 className="mb-3" style={{ color: "#2c2133", fontWeight: "700" }}>
           Projects
@@ -130,6 +131,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

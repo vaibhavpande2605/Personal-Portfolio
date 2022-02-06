@@ -3,6 +3,7 @@ import React from "react";
 function Skills() {
   return (
     <>
+    <div className="main-container">
       <div id="skills" class="skills section-bg mb-5">
      
         <div class="container" data-aos="fade-up">
@@ -12,9 +13,9 @@ function Skills() {
           <div class="section-title">
           </div>
 
-          <div class="row skills-content">
-            <div class="col-lg-6">
-            <div class="progress">
+          <div class="row skills-content ">
+            <div class="col-lg-6 px-3 ">
+            <div class="progress ">
                 <span class="skill">
                  CPP <i class="val">90%</i>
                 </span>
@@ -90,7 +91,7 @@ function Skills() {
       
             </div>
 
-            <div class="col-lg-6">
+            <div class="col-lg-6 px-3">
               <div class="progress">
                 <span class="skill">
                   ReactJS <i class="val">87%</i>
@@ -166,6 +167,7 @@ function Skills() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

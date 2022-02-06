@@ -1,6 +1,6 @@
 import React from "react";
 import Particles from "react-tsparticles";
-import "./particle.css";
+
 
 function Particle() {
   const style = {
@@ -10,6 +10,8 @@ function Particle() {
     position: "absolute",
   };
   return (
+    <>
+    <div className="main-container">
     <div style={style}>
       <Particles
         // Add window resize logic if required
@@ -105,6 +107,8 @@ function Particle() {
         }}
       />
     </div>
+    </div>
+    </>
   );
 }
 

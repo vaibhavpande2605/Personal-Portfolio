@@ -5,7 +5,7 @@ function About() {
     <>
       <div className="main-container">
         <div className="container justify-content-center  ">
-          <h2 className="mb-3">About me</h2>
+          <h2 className="mb-2 mt-2">About me</h2>
           {/* <h1>{state}</h1> */}
 
           <div className="about-info">

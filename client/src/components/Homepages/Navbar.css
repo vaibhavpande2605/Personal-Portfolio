@@ -1,14 +1,14 @@
 .nav-container {
   background-color: #1d1622;
   margin: 0 auto;
-  max-width: 1600px;
+  max-width: 100%;
   position: sticky;
   top: 0;
   z-index: 10;
 }
 
 nav {
-  max-width: 1400px;
+  max-width: 100%;
   margin: 0 auto;
  height: 60px;
 }
@@ -126,7 +126,7 @@ nav {
   }
 
   nav {
-    max-width: 1450px;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
